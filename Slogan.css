@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.excel {
+    background-color: #2696FF;
+}
+
+.pipefy {
+    background-color: #00B8FF;
+}
+
+.powerbi {
+    background-color: #F44336;
+}
+
+.button img {
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: darken(5%, .button);
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .button {
+        margin-bottom: 10px;
+    }
+}
